@@ -29,6 +29,7 @@
     var isNode=new Function("try {return this===global;}catch(e){return false;}");
     var isWebworker=new Function("try {return typeof importScripts === 'function';}catch(e){return false;}");
 
+    /*
     // node.js context, but not WebWorker
     if ( isNode() && !isWebworker() ){
         Worker = require('webworker-threads').Worker;
@@ -69,6 +70,7 @@
 
             };
         }
+        */
     }
 
 (function (console, $hx_exports, $global) { "use strict";
